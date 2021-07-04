@@ -21,9 +21,9 @@ const appStyles = (theme: Theme): StyleRules =>
     submitButton: {
       textAlign: "center",
       marginTop: theme.spacing(3),
+      marginBottom: theme.spacing(5),
     },
     grid: {
-      marginTop: theme.spacing(5),
       fontFamily: theme.typography.fontFamily,
     },
     gridHeader: {

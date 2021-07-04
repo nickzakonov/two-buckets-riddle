@@ -4,6 +4,7 @@ import { Button, Grid, makeStyles, TextField } from "@material-ui/core";
 import { Step } from "../types/step";
 import styles from "../../styles/general";
 import List from "./List";
+import { Alert } from "@material-ui/lab";
 
 const useStyles = makeStyles(styles);
 
@@ -95,7 +96,7 @@ const Form: FC = () => {
           Solve
         </Button>
       </div>
-      {error}
+      {error && <Alert severity="error">{error}</Alert>}
       {!error && <List items={steps} />}
     </form>
   );
